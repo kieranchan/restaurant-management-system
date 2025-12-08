@@ -22,7 +22,7 @@ A comprehensive restaurant management platform built with Spring Boot, featuring
 
 ### **Backend | 後端**
 - **Framework**: Spring Boot 2.7.x
-- **ORM**: MyBatis Plus
+- **ORM**: MyBatis + PageHelper
 - **Database**: MySQL 8.0
 - **Cache**: Redis 6.x
 - **File Storage**: Alibaba Cloud OSS
@@ -74,7 +74,7 @@ A comprehensive restaurant management platform built with Spring Boot, featuring
 
 1. **Clone Repository | 克隆項目**
    ```bash
-   git clone https://github.com/DamonKima/restaurant-management-system.git
+   git clone https://github.com/kieranchan/restaurant-management-system.git
    cd restaurant-management-system
    ```
 
