@@ -1,6 +1,6 @@
 # 🍽️ Restaurant Management System | 餐廳管理系統
 
-A comprehensive restaurant management platform built with Spring Boot, featuring order processing, inventory management, and real-time analytics.
+A comprehensive restaurant management platform built with Spring Boot, featuring order processing, menu management, and real-time analytics.
 
 ## 🌟 Features | 功能特色
 
@@ -9,7 +9,6 @@ A comprehensive restaurant management platform built with Spring Boot, featuring
 - **Menu Management** | 菜品管理：Category management, dish configuration, and pricing control
 - **Order Processing** | 訂單處理：Real-time order tracking and status management
 - **Sales Analytics** | 營業數據：Revenue reports and performance dashboards
-- **Inventory Control** | 庫存管理：Stock tracking and low-inventory alerts
 
 ### 📱 **Customer App | 用戶端**
 - **User Registration** | 用戶註冊：WeChat integration and profile management
@@ -25,7 +24,7 @@ A comprehensive restaurant management platform built with Spring Boot, featuring
 - **ORM**: MyBatis + PageHelper
 - **Database**: MySQL 8.0
 - **Cache**: Redis 6.x
-- **File Storage**: Alibaba Cloud OSS
+- **File Storage**: Alibaba Cloud OSS / Tencent Cloud COS
 - **API Documentation**: Swagger/Knife4j
 
 ### **Frontend | 前端**
@@ -115,13 +114,12 @@ A comprehensive restaurant management platform built with Spring Boot, featuring
 
 ### **🔥 Performance Optimization | 性能優化**
 - **Redis Caching**: Implemented caching strategy reducing database queries by 60%
-- **Connection Pooling**: Optimized database connections with HikariCP
-- **Lazy Loading**: Enhanced page load speed with lazy loading implementation
+- **Connection Pooling**: Optimized database connections with Druid
 
 ### **🔐 Security Features | 安全特性**
 - **JWT Authentication**: Secure token-based authentication system
-- **Password Encryption**: BCrypt password hashing for user security
-- **Input Validation**: Comprehensive input validation to prevent SQL injection
+- **Password Encryption**: MD5 password hashing for user security
+- **SQL Injection Prevention**: MyBatis parameter binding to prevent SQL injection
 
 ### **📈 Scalability | 擴展性**
 - **Modular Design**: Clean separation of concerns with service-oriented architecture
