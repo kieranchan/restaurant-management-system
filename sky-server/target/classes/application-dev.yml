@@ -1,0 +1,32 @@
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: sky_take_out
+    username: root
+    password: shuizhiyve1!
+  wechat:
+    # 小程序
+    appid: wx18cd67515eae41fb
+    secret: 4fe770f885a84f0acf7c47102c09554f
+    # 微信支付相关
+    mchid: xx
+    mch-serial-no: XX
+    private-key-file-path: XX
+    api-v3-key: XX
+    we-chat-pay-cert-file-path: XX
+    notify-url: XX
+    refund-notify-url: XX
+
+cos:
+  secret-id: AKID3CIZq8V4Yq5WovslYDHKJExalxywz0qy
+  secret-key: BJNEuSo061jNq9Umz3yqX1IOI3B8vXv9
+  region: ap-guangzhou
+  bucket-name: cq-1319200116
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 1

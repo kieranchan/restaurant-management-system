@@ -1,0 +1,36 @@
+# Git
+.git/
+
+# IDE
+.idea/
+*.iml
+
+# Maven
+target/
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Environment
+.env
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Packaged files
+nginx-1.20.2/
+
+# AI Assistant files
+.claude/
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+REVIEW_PLAN.md
+DEPLOYMENT.md
