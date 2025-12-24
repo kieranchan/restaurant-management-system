@@ -131,6 +131,19 @@ public class EmployeeController {
     }
 
     /**
+     * 根据idNumber查询员工信息
+     *
+     * @param idNumber
+     * @return
+     */
+    @GetMapping("/idNumber/{idNumber}")
+    @ApiOperation("根据idNumber查询员工信息")
+    public Result<Employee> getByIdNumber(@PathVariable String idNumber) {
+        Employee employee = employeeService.getByIdNumber(idNumber);
+        return Result.success(employee);
+    }
+
+    /**
      * 编辑员工信息
      *
      * @param employeeDTO

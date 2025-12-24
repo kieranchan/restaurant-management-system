@@ -52,4 +52,13 @@ public interface EmployeeMapper {
      */
     @Select("select * from employee where id = #{id}")
     Employee getById(Long id);
+
+    /**
+     * 根据idNumber查询员工信息
+     *
+     * @param idNumber
+     * @return
+     */
+    @Select("select * from employee where id_number = #{idNumber}")
+    Employee getByIdNumber(String idNumber);
 }

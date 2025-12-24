@@ -49,6 +49,14 @@ public interface EmployeeService {
     Employee getById(Long id);
 
     /**
+     * 根据idNumber查询员工信息
+     *
+     * @param idNumber
+     * @return
+     */
+    Employee getByIdNumber(String idNumber);
+
+    /**
      * 编辑员工信息
      *
      * @param employeeDTO

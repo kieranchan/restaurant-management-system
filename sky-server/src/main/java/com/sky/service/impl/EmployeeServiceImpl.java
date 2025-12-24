@@ -153,6 +153,19 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     /**
+     * 根据idNumber查询员工信息
+     *
+     * @param idNumber
+     * @return
+     */
+    public Employee getByIdNumber(String idNumber) {
+        Employee employee = employeeMapper.getByIdNumber(idNumber);
+        //防止密码泄露
+        employee.setPassword("****");
+        return employee;
+    }
+
+    /**
      * 编辑员公共信息
      *
      * @param employeeDTO
